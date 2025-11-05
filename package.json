@@ -4,16 +4,16 @@
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://tsopsebas-3mgb.github.io/Portfolio",
-
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy":"gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.1.0",
     "@fortawesome/free-brands-svg-icons": "^7.1.0",
+    "@fortawesome/free-solid-svg-icons": "^7.1.0",
     "@fortawesome/vue-fontawesome": "^3.1.2",
     "@tailwindcss/postcss": "^4.1.16",
     "@tailwindcss/vite": "^4.1.16",

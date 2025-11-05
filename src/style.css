@@ -4,7 +4,7 @@
 
 @layer  {
   .bg-primary {
-    background-color: var(--bg-pprimary);
+    background-color: var(--bg-primary);
   }
   .bg-opacity {
     background-color: rgba(255, 255, 255, 0.1);
@@ -17,21 +17,29 @@
     color: var(--text-primary);
   }
   .text-secondary {
-    color: #b0b0b0;
+    color: #6a7282;
+  }
+  .text-link{
+     color:oklch(43.2% 0.095 166.913);
   }
 }
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  --bg-pprimary:rgb(4, 4, 41);
-  --text-primary: rgb(42, 95, 141);
+  --bg-secondary:#03031f;
+  --bg-primary:#040429;
+  --text-primary:white;
+  --text-secondary:gray;
   color-scheme: light dark;
-
+  margin:0 auto;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+html {
+  font-size: clamp(14px, 1.5vw, 18px);
 }
 
 a {
@@ -56,35 +64,19 @@ h1 {
   line-height: 1.1;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
 .card {
   padding: 2em;
 }
 
 #app {
-  margin: 0 auto;
+  position: relative;
   text-align: center;
   width: 100%; height: 100%;
+  display: flex;
+  flex-direction:column;
+  padding-top: 3.75rem;
+  background-color:var(--bg-primary);
 }
-
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -102,6 +94,8 @@ body{
 }
 *, *::before, *::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+}
+button{
+  color:rgb(114, 184, 189);
+  font-weight: bold;
 }
